@@ -49,10 +49,45 @@ def wait_for_user
   question = gets.chomp
   goodbye if question == "q"
   # AddAnswer if question == "add_answer"
+  poem if question == "poem"
 end
 
 def add_answer
+  #nothing yet
+end
+
+def poem
+  puts "
+  Conditions Of Programming - Poem by Lawrence S. Pertillar
+  Autoplay next video If you want to wear those shoes, 
+  Put them on.
+  There is no agreement of purposes, 
+  In the first place.
+  You will do as you wish.
+  And I know this! 
   
+  If you want to declare you are right, 
+  When wrong stares me in the face.
+  And you want me to believe, 
+  What you perceive.
+  Do it! 
+  There is no argument.
+  
+  Whatever you choose to do from now on...
+  That is up to you.
+  Conditions of programming, 
+  Have been accepted as they are! 
+  You see things as you wish them to exist.
+  And I choose to refrain from becoming a conformist.
+  
+  However...
+  Let's come to admit, 
+  We are both in conflict...
+  With the current nonsense that is being dished! 
+  And getting out of it provides neither one of us an exit! ".yellow
+  sleep(4)
+  exit
+
 end
 
 def goodbye
